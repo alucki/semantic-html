@@ -1,0 +1,113 @@
+<html lang="en">
+  <!-- head = machine-readable information about the document -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <title>Semantic html</title>
+  </head>
+
+  <!-- body = content of an entire HTML document - there can only be one -->
+  <body>
+    <header>
+      <h1>A Moomin guide to semantic html</h1>
+    </header>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href=/characters.html">Moomin characters</a></li>
+        <li><a href="/books.html">Moomin books</a></li>
+        <li><a href="/author.html">The author</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Semantic html elements</a></li>
+      </ul>
+    </nav>
+
+    <section class="welcome-banner">
+      <img class="welcome-banner-image" src="./images/moomin-banner.jpg" alt="moomin welcome banner" />
+    </section>
+    
+    
+
+    <main>
+      <!-- article = self-container composition intended for independent distribution/reusability -->
+      <article class="semantic-html-content">
+        <div class="semantic-html-content-container">
+        <h2>Why do the Moomins use semantic html?</h2>
+        <p>
+          Semantics are the meaning of a word, phrase or text. Moomins love friends and family and find meaning in everything, even the smallest of things. HTML5 semantic
+          tags aim to make our code more descriptive, more meaningful.
+          <br />
+          See below for a list of reasons.
+        </p>
+        <ul>
+          <li>
+            Better for <strong>SEO optimisation</strong> as search engines will consider semantic
+            content as import keywords to influence pag ranking
+          </li>
+          <li>
+            <strong>Screen readers</strong> use it as signposts for those with visual impairment
+          </li>
+          <li>Makes code more readable</li>
+          <li>Mirrors proper custom element/component naming</li>
+        </ul>
+      </div>
+
+        <aside class="moomin-bio">
+          Who are the Moomins? 
+          Well, a quick aside, they're the central characters in a series of books and a comic strip by Swedish-speaking Finnish illustrator Tove Jansson. 
+          They are a family of white, round fairy tale characters with large snouts</aside>
+      </article>
+
+      <blockquote>I only want to live in peace, plant potatoes and dream!</blockquote>
+    </main>
+
+    <section>
+      <h2>A semantic moomin form</h2>
+
+      <form>
+        <fieldset>
+          <label for="firstname">First name:</label>
+          <input type="text" name="firstname" placeholder="Enter your first name" required>
+          <br>
+          <br>
+          <label for="email">Email:</label>
+          <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          />
+          <br>
+          <br>
+          <label for="birthday">Birthday:</label>
+          <input type="date" name="birthday">
+          <br>
+          <br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+
+      <figure>
+        <img src="./images/moomin-writing.jpg" alt="moomin writing"/>
+        <figcaption></figcaption>
+      </figure>
+    </section>
+
+    <footer>
+      <p>In Moominvalley, there are no such things as footers. If there were, the footer of Moominvalley would probably be the moomin's house, right at the southern tip, and therefore the bottom.</p>
+
+      <address>Contact Moominmamma for more info:
+        <br>
+        Moominmamma,
+        <br>
+        The Moomin House,
+        <br>
+        Moominvalley
+        <br>
+        <br>
+        They don't have a phone so best to drop by, all visitors welcome.
+      </address>
+    </footer>
+  </body>
+</html>
