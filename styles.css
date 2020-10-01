@@ -69,7 +69,7 @@ a:active {
 .moomin-bio {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   background-color: #faecb7;
-  padding: 10px;
+  padding: 10px 0 10px 10px;
   width: 30vw;
 }
 
@@ -85,15 +85,68 @@ a:active {
 }
 
 blockquote {
-  /* height: 100px; */
   display: flex;
+  position: relative;
   justify-content: center;
+  font-size: 20px;
+  margin: 60px 0;
 }
 
 blockquote:before {
+  position: absolute;
   display: block;
-  padding-left: 10px;
-  /* need quote mark code */
-  /* content: ""; */
-  font-size: 60px;
+  content: "\201C";
+  font-size: 50px;
+  top: -10px;
+  left: 22%;
+}
+
+blockquote:after {
+  position: absolute;
+  display: block;
+  content: "\201D";
+  font-size: 50px;
+  top: -1px;
+  right: 23%;
+}
+
+.moomin-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moomin-form-container {
+  flex-direction: column;
+}
+
+.moomin-form-title {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #21542f;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
+  flex-direction: column;
 }
